@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= results.title %>
+    </title>
+    <link rel='stylesheet' href='/css/style.css' />
+
+</head>
+
+<body>
+    <figure>
+        <img src="/img/logo-DH.png" alt="Logo Digital House">
+    </figure>
+    <h1>
+        <%= results.title %>
+    </h1>
+
+    <figure>
+        <img src="<%= results.Poster %> " alt="" width=300px>
+    </figure>
+
+    <br>
+    <p>CALIFICACIÓN: <%= results.imdbRating %>
+    </p>
+    <p>PREMIOS: <%= results.Awards %>
+    </p>
+    <p>DURACIÓN: <%= results.Runtime + ' min' %>
+    </p>
+    <p>FECHA DE CREACIÓN: <%= results.Released %>
+    </p>
+    <!-- <section>
+        <a class="botonModificar" href="/resultss/edit/<%= results.id %>">Modificar</a>
+        <a class="botonBorrar" href="/resultss/delete/<%= results.id %>">Borrar</a>
+        <a class="botonVolver" href="/resultss">Listado de Películas</a>
+    </section>
+ -->
+</body>
+
+</html>
